@@ -1,6 +1,7 @@
 import { expect, test } from 'vitest'
 import { Appointment } from './appointment'
 import { getFutureDate } from '../tests/utils/get-future-date'
+
 test('create an appointment', () => {
     const startsAt = getFutureDate('2023-06-14')
     const endsAt = getFutureDate('2023-06-15')
@@ -21,10 +22,10 @@ test('cannot create an appointment with end date before start date', () => {
 
     expect(() => {
         return new Appointment({
-        customer: 'John Doe',
-        startsAt,
-        endsAt
-    })
+            customer: 'John Doe',
+            startsAt,
+            endsAt
+        })
     }).toThrow()
 })
 
@@ -37,9 +38,9 @@ test('cannot create an appointment with start date before now', () => {
 
     expect(() => {
         return new Appointment({
-        customer: 'John Doe',
-        startsAt,
-        endsAt
-    })
+            customer: 'John Doe',
+            startsAt,
+            endsAt
+        })
     }).toThrow()
 })
