@@ -1,0 +1,27 @@
+{
+  "name": "apps-testaveis-node-rockeseat",
+  "version": "1.0.0",
+  "description": "Aplicação desenvolvida com node.js e typescript com princípios de solid",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduardoBarbosa-TI/apps-testaveis-node-rockeseat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EduardoBarbosa-TI/apps-testaveis-node-rockeseat/issues"
+  },
+  "homepage": "https://github.com/EduardoBarbosa-TI/apps-testaveis-node-rockeseat#readme",
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "vitest": "^0.32.0"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0"
+  }
+}
